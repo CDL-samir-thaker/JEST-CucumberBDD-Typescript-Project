@@ -1,6 +1,6 @@
 {
-	"cucumberautocomplete.steps": ["cypress/support/step_definitions/**/*.ts"],
-	"cucumberautocomplete.syncfeatures": "cypress/e2e/**/**/*.feature",
+	"cucumberautocomplete.steps": ["src/test/steps/*.ts"],
+	"cucumberautocomplete.syncfeatures": "src/test/feature/*.feature",
 	"cucumberautocomplete.strictGherkinCompletion": true,
 	"conventionalCommits.scopes": [
 		"test-login",

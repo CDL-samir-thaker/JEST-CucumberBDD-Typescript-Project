@@ -1,4 +1,4 @@
-name: c360-cypress-test-dev
+name: Running JEST-TESTS
 
 on:
     pull_request:

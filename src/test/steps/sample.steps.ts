@@ -1,12 +1,12 @@
 import axios from 'axios';
 import { defineFeature, loadFeature } from 'jest-cucumber';
 
-const feature = loadFeature('src/test/feature/divide.feature');
+const feature = loadFeature('src/test/feature/sample.feature');
 // logging-in.steps.js
 let cat;
 
 defineFeature(feature, (test) => {
-	test('As a user I want view list of employees', ({ given, when, then }) => {
+	test('As a user I want view list of data', ({ given, when, then }) => {
 		given('the user has logged into app', () => {});
 
 		when('the user request to view cat deatils', async () => {
@@ -14,7 +14,9 @@ defineFeature(feature, (test) => {
 		});
 
 		then('the system should return a sucess response', () => {
-			expect(cat[0].userId).toBe(1);
+			// console.log(cat.data[0]);
+			expect(cat.status).toBe(200);
+			expect(cat.data[0].userId).toBe(1);
 		});
 	});
 
