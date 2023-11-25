@@ -1,0 +1,16 @@
+{
+	"cucumberautocomplete.steps": ["cypress/support/step_definitions/**/*.ts"],
+	"cucumberautocomplete.syncfeatures": "cypress/e2e/**/**/*.feature",
+	"cucumberautocomplete.strictGherkinCompletion": true,
+	"conventionalCommits.scopes": [
+		"test-login",
+		"upgrade",
+		"posid",
+		"item",
+		"test",
+		"modifier",
+		"view",
+		"site",
+		"brandgroup"
+	]
+}
