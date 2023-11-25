@@ -10,6 +10,22 @@ const config: Config = {
 	testTimeout: 180000,
 	// setupFiles: ['dotenv/config'],
 	maxWorkers: 4,
+	reporters: [
+		'default',
+		[
+			'jest-html-reporters',
+			{
+				publicPath: './html-report',
+				filename: `Test-Report.html`,
+				openReport: false,
+				inlineSource: true,
+				pageTitle: `Test Report`,
+				darkTheme: false,
+				includeFailureMsg: true,
+				includeConsoleLog: true,
+			},
+		],
+	],
 };
 
 export default config;

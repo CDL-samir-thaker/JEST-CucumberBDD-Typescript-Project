@@ -13,13 +13,12 @@ Jest is a JavaScript testing framework designed to ensure correctness of any Jav
 2. Install Visual Studio Code. (https://code.visualstudio.com/download)<br>
 3. Install the following Visual Studio code extensions-
     - Cucumber (Gherkin) Full Support
-    - Prettier &  ESLint
+    - Prettier & ESLint
     - GitLens - Git supercharged
     - IntelliCode
     - Jest
     - Jest Runner
     - Jest-cucumber code generator
-
 
 # Installation
 
@@ -37,6 +36,7 @@ Jest is a JavaScript testing framework designed to ensure correctness of any Jav
 ```typescript
 npm run test
 ```
+
 2. To check code formatting:
 
 ```typescript
